@@ -20,7 +20,7 @@ model User {
   email        String   @unique // -> Unik værdi
   password     String
   description  String?  @db.Text // -> Lang tekst
-  image        String
+  imageUrl     String
   refreshToken String
   isActive     Boolean  @default(true) // -> Bool med default true
   createdAt    DateTime @default(now()) // -> Datotid
@@ -32,19 +32,22 @@ model User {
   @@map("users") // -> Navn på tabel
 }
 
-model Categories {
+model Category {
   id          Int    @id @default(autoincrement())
   title       String
   description String @db.Text
-  quantity    Int    @default(0)
+
+  products Product[]
 
   @@map("categories")
 }
 
 model Brand {
-  id    Int    @id @default(autoincrement())
-  title String
-  image String
+  id       Int    @id @default(autoincrement())
+  title    String
+  imageUrl String
+
+  products Product[]
 
   @@map("brands")
 }
@@ -53,16 +56,20 @@ model Product {
   id          Int      @id @default(autoincrement())
   name        String
   slug        String
-  imageUrl    String
+  imageUrl String
   description String?  @db.Text // -> Lang tekst
   price       Decimal  @db.Decimal(10, 2) // -> Decimaltal til pris
   stock       Int
+  categoryId  Int
+  brandId     Int
   isActive    Boolean  @default(true)
   createdAt   DateTime @default(now()) // -> Datotid
 
-  carts   Cart[]
-  reviews Review[]
-  orderlines OrderLine[]
+  category   Category    @relation(fields: [categoryId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  brand      Brand       @relation(fields: [brandId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  carts      Cart[]
+  reviews    Review[]
+  orderlines Orderline[]
 
   @@map("products")
 }
@@ -104,13 +111,13 @@ model Order {
   status     Int
   createdAt  DateTime @default(now()) // -> Datotid
 
-  user User @relation(fields: [userId], references: [id], onDelete: Cascade, onUpdate: Cascade) // -> Een til mange relation
-  orderlines OrderLine[]
+  user       User        @relation(fields: [userId], references: [id], onDelete: Cascade, onUpdate: Cascade) // -> Een til mange relation
+  orderlines Orderline[]
 
   @@map("orders")
 }
 
-model OrderLine {
+model Orderline {
   id        Int      @id @default(autoincrement())
   orderId   Int
   productId Int
@@ -118,7 +125,7 @@ model OrderLine {
   price     Int
   createdAt DateTime @default(now()) // -> Datotid
 
-  order Order @relation(fields: [orderId], references: [id], onDelete: Cascade, onUpdate: Cascade) // -> Een til mange relation
+  order   Order   @relation(fields: [orderId], references: [id], onDelete: Cascade, onUpdate: Cascade) // -> Een til mange relation
   product Product @relation(fields: [productId], references: [id], onDelete: Cascade, onUpdate: Cascade) // -> Een til mange relation
 
   @@map("orderlines")

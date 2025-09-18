@@ -1,2 +1,11 @@
-"id","title","comment","numStars","productId","userId","isActive"
-1,Test Review,"Produktet lever op til mine forventninger",4,1,1,1
+id,title,comment,numStars,productId,userId,isActive,createdAt,updatedAt
+1,"Perfekt basic tee","Lækker kvalitet og pasform. Stoffet holder formen efter vask.",5,1,1,true,2025-09-17T10:05:00+02:00,2025-09-17T10:05:00+02:00
+2,"Hoodie der holder varmen","Blød inderside og god længde i ærmerne. Kunne bruge flere farver.",4,2,2,true,2025-09-16T18:42:00+02:00,2025-09-16T18:42:00+02:00
+3,"Rigtige 90s jeans vibes","De sidder loose uden at se klodsede ud. Fed vask.",5,3,3,true,2025-09-16T09:10:00+02:00,2025-09-16T09:10:00+02:00
+4,"Komfortable chinos","Let stræk og pænt fald. Gik en størrelse ned for perfekt fit.",4,4,4,true,2025-09-15T15:27:00+02:00,2025-09-15T15:27:00+02:00
+5,"Satin-kjole til going-out","Flot glans og sidder smigrende. Tynd men ikke gennemsigtig.",5,5,5,true,2025-09-14T20:03:00+02:00,2025-09-14T20:03:00+02:00
+6,"Let og varm puffer","God til cykelturen – vindtæt og ikke for bulky.",4,6,6,true,2025-09-14T08:56:00+02:00,2025-09-14T08:56:00+02:00
+7,"Leggings der ikke glider","Høj talje, squat-proof og praktisk lomme til telefonen.",5,7,7,true,2025-09-13T17:34:00+02:00,2025-09-13T17:34:00+02:00
+8,"Sokker i god kvalitet","Tykkelsen er lige tilpas og elastikken strammer ikke.",4,8,8,true,2025-09-12T11:22:00+02:00,2025-09-12T11:22:00+02:00
+9,"Kæde der går til alt","Solid lås og pæn mat finish. God pris.",5,9,9,true,2025-09-11T19:45:00+02:00,2025-09-11T19:45:00+02:00
+10,"Komfortable sneakers","Bløde fra dag ét og passer både til jeans og kjole.",4,10,10,true,2025-09-10T13:08:00+02:00,2025-09-10T13:08:00+02:00

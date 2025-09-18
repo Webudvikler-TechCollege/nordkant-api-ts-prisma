@@ -1,2 +1,31 @@
-"id","name","slug","image","description","price","stock","isActive","createdAt"
-1,"Monster Ultra","monster-ultra","ultra.png","Mindre sød, lettere smag og uden kalorier",20.00,8,1,"2025-08-01 12:17:43.379"
+id,name,slug,imageUrl,description,price,stock,categoryId,brandId,isActive,createdAt
+1,Nordlyst Essential Tee,nordlyst-essential-tee,https://picsum.photos/seed/nordlyst-essential-tee/1200/1200,"Blød unisex T-shirt i økologisk bomuld med ren pasform og diskret label.",179.00,120,1,1,true,2025-09-17T10:00:00+02:00
+2,Blockwave Oversize Hoodie,blockwave-oversize-hoodie,https://picsum.photos/seed/blockwave-oversize-hoodie/1200/1200,"Tung, børstet fleece med kængurulomme og dropped shoulders.",449.00,80,2,2,true,2025-09-17T10:00:00+02:00
+3,MetroDrip Baggy Jeans,metrodrip-baggy-jeans,https://picsum.photos/seed/metrodrip-baggy-jeans/1200/1200,"Løs silhuet, dybe lommer og slid-detaljer for ægte 90s vibe.",599.00,65,3,3,true,2025-09-17T10:00:00+02:00
+4,LoopLoom Pleated Chino,looploom-pleated-chino,https://picsum.photos/seed/looploom-pleated-chino/1200/1200,"Chino med frontlægs og let stræk – semi-dressy, super comfy.",429.00,90,4,4,true,2025-09-17T10:00:00+02:00
+5,EchoWard Satin Slip Dress,echoward-satin-slip-dress,https://picsum.photos/seed/echoward-satin-slip-dress/1200/1200,"Minimalistisk satin-kjole med justerbare stropper og bias cut.",549.00,40,5,5,true,2025-09-17T10:00:00+02:00
+6,VibeLane Puffer Jacket,vibelane-puffer-jacket,https://picsum.photos/seed/vibelane-puffer-jacket/1200/1200,"Let puffer med vandafvisende finish og varm, syntetisk fyld.",999.00,35,6,6,true,2025-09-17T10:00:00+02:00
+7,ShadeClub Performance Leggings,shadeclub-performance-leggings,https://picsum.photos/seed/shadeclub-performance-leggings/1200/1200,"High-waist leggings i svedtransporterende stof og telefonlomme.",349.00,110,7,7,true,2025-09-17T10:00:00+02:00
+8,Offgrid Co 3-Pack Socks,offgrid-co-3-pack-socks,https://picsum.photos/seed/offgrid-co-3-pack-socks/1200/1200,"3-pak rib-sokker med forstærket hæl/tå og brand-vævning.",129.00,200,8,8,true,2025-09-17T10:00:00+02:00
+9,Neonthread Chain Necklace,neonthread-chain-necklace,https://picsum.photos/seed/neonthread-chain-necklace/1200/1200,"Stål-kæde med mat finish – perfekt lag-på-lag accessory.",199.00,150,9,9,true,2025-09-17T10:00:00+02:00
+10,Lowkey Lab Court Sneaker,lowkey-lab-court-sneaker,https://picsum.photos/seed/lowkey-lab-court-sneaker/1200/1200,"Retro court-silhuet med vegansk læder og komfortsål.",799.00,70,10,10,true,2025-09-17T10:00:00+02:00
+11,Nordlyst Graphic Tee,nordlyst-graphic-tee,https://picsum.photos/seed/nordlyst-graphic-tee/1200/1200,"Kraftig jersey med oversize pasform og sæsonens print.",229.00,130,1,1,true,2025-09-17T10:00:00+02:00
+12,Blockwave Zip Hoodie,blockwave-zip-hoodie,https://picsum.photos/seed/blockwave-zip-hoodie/1200/1200,"Tidsløs zip-hoodie med YKK-lynlås og hoodie-snøre.",469.00,75,2,2,true,2025-09-17T10:00:00+02:00
+13,MetroDrip Carpenter Jeans,metrodrip-carpenter-jeans,https://picsum.photos/seed/metrodrip-carpenter-jeans/1200/1200,"Workwear-inspirerede jeans med hammerloop og kontrastsømme.",629.00,55,3,3,true,2025-09-17T10:00:00+02:00
+14,LoopLoom Wide-Leg Trouser,looploom-wide-leg-trouser,https://picsum.photos/seed/looploom-wide-leg-trouser/1200/1200,"Wide-leg bukser i blød twill – elastisk talje bagtil.",459.00,85,4,4,true,2025-09-17T10:00:00+02:00
+15,EchoWard Skater Skirt,echoward-skater-skirt,https://picsum.photos/seed/echoward-skater-skirt/1200/1200,"Skater-nederdel med høj talje og dynamisk fald.",299.00,95,5,5,true,2025-09-17T10:00:00+02:00
+16,VibeLane Denim Jacket,vibelane-denim-jacket,https://picsum.photos/seed/vibelane-denim-jacket/1200/1200,"Boxy denim-jakke i rigid kvalitet med vintage-vask.",749.00,60,6,6,true,2025-09-17T10:00:00+02:00
+17,ShadeClub Sports Bra,shadeclub-sports-bra,https://picsum.photos/seed/shadeclub-sports-bra/1200/1200,"Mellem støtte, åndbar mesh og aftagelige puder.",279.00,140,7,7,true,2025-09-17T10:00:00+02:00
+18,Offgrid Co Beanie,offgrid-co-beanie,https://picsum.photos/seed/offgrid-co-beanie/1200/1200,"Ribstrikket beanie i uldmix med foldet kant.",169.00,170,9,8,true,2025-09-17T10:00:00+02:00
+19,Neonthread Leather Belt,neonthread-leather-belt,https://picsum.photos/seed/neonthread-leather-belt/1200/1200,"Klassisk læderbælte med børstet spænde.",249.00,120,9,9,true,2025-09-17T10:00:00+02:00
+20,Lowkey Lab Chunky Boot,lowkey-lab-chunky-boot,https://picsum.photos/seed/lowkey-lab-chunky-boot/1200/1200,"Støvle med chunky sål og side-zip – vandafvisende.",1099.00,45,10,10,true,2025-09-17T10:00:00+02:00
+21,Nordlyst Ribbed Tank,nordlyst-ribbed-tank,https://picsum.photos/seed/nordlyst-ribbed-tank/1200/1200,"Ribbet tanktop i kraftig, krympefri kvalitet.",159.00,160,1,1,true,2025-09-17T10:00:00+02:00
+22,Blockwave Crew Sweatshirt,blockwave-crew-sweatshirt,https://picsum.photos/seed/blockwave-crew-sweatshirt/1200/1200,"Klassisk crewneck med tung rib og relaxed fit.",399.00,100,2,2,true,2025-09-17T10:00:00+02:00
+23,MetroDrip Relaxed Jeans,metrodrip-relaxed-jeans,https://picsum.photos/seed/metrodrip-relaxed-jeans/1200/1200,"Afslappet straight-leg med autentisk stenvask.",579.00,70,3,3,true,2025-09-17T10:00:00+02:00
+24,LoopLoom Cargo Pants,looploom-cargo-pants,https://picsum.photos/seed/looploom-cargo-pants/1200/1200,"Multi-lomme cargo med snore i ben og slidstærk canvas.",499.00,90,4,4,true,2025-09-17T10:00:00+02:00
+25,EchoWard Mesh Dress,echoward-mesh-dress,https://picsum.photos/seed/echoward-mesh-dress/1200/1200,"Bodycon mesh-kjole med for og grafisk print.",399.00,55,5,5,true,2025-09-17T10:00:00+02:00
+26,VibeLane Trench Coat,vibelane-trench-coat,https://picsum.photos/seed/vibelane-trench-coat/1200/1200,"Let trench i vandafvisende twill med bælte og stormflap.",1199.00,30,6,6,true,2025-09-17T10:00:00+02:00
+27,ShadeClub Training Shorts,shadeclub-training-shorts,https://picsum.photos/seed/shadeclub-training-shorts/1200/1200,"Letvægts shorts med 4-way stretch og inder-liner.",279.00,130,7,7,true,2025-09-17T10:00:00+02:00
+28,Offgrid Co Boxer Briefs 3-Pack,offgrid-co-boxer-briefs-3-pack,https://picsum.photos/seed/offgrid-co-boxer-briefs-3-pack/1200/1200,"Svedtransporterende boxers i 3-pak med blød linning.",219.00,180,8,8,true,2025-09-17T10:00:00+02:00
+29,Neonthread Crossbody Bag,neonthread-crossbody-bag,https://picsum.photos/seed/neonthread-crossbody-bag/1200/1200,"Kompakt crossbody med justerbar rem og interne lommer.",349.00,90,9,9,true,2025-09-17T10:00:00+02:00
+30,Lowkey Lab Slide Sandal,lowkey-lab-slide-sandal,https://picsum.photos/seed/lowkey-lab-slide-sandal/1200/1200,"Let EVA-slipper med formstøbt fodseng – perfekt til sommer.",299.00,100,10,10,true,2025-09-17T10:00:00+02:00

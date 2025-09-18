@@ -20,6 +20,7 @@ async function processCsvFiles() {
   const csvFiles = files.filter(f => f.endsWith('.csv'));
 
   for (const modelName of keysOrder) {
+    
     const filename = `${modelName}.csv`;
     if (!csvFiles.includes(filename)) continue;
 
@@ -58,7 +59,6 @@ const seedData = async (model: ModelName, data: any[]) => {
     const modelName = String(model);
 
     console.log(modelName);
-
 
     await (prisma[model] as any).createMany({
       data,
