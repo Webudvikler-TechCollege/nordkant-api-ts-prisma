@@ -1,61 +1,54 @@
-# Prisma API Template
+# Nordkant API 
+Dette API indeholder data til tøj webshoppen Nordkant. API'et er bygget i NodeJS/Typescript og kræver adgang til en Mysql database. 
 
-Et starterprojekt med **Node.js**, **TypeScript**, **Express 5**, og **Prisma ORM**. Perfekt som udgangspunkt for REST API'er med moderne værktøjer og datamodellering.
-
----
-
-## 🛠 Teknologier
-
-- [TypeScript](https://www.typescriptlang.org/)
-- [Express 5](https://expressjs.com/)
-- [Prisma ORM](https://www.prisma.io/)
-- [TSX](https://github.com/esbuild-kit/tsx)
-- [dotenv](https://www.npmjs.com/package/dotenv)
-- [bcrypt](https://www.npmjs.com/package/bcrypt)
+API'et kan hentes ned og køres lokalt fra din computer.
 
 ---
-
 ## Kom i gang
+Følgende vejledning beskriver kommandoer som skal skrives i en *terminal* som er en helt basal tekst editor som også er indbygget i **VS Code**. Klik på *Terminal* => *New terminal* for at hente den frem.
 
-### 1. Klon repo og installér afhængigheder
+Alle kommandoer er vist i en teminal lignende boks.
 
+### 1. Klon repository og installér *dependencies* 
+Med følgende kommando henter du koden ned på din computer fra Github. Du behøver ikke at lave en folder til den da kommandoen opretter en med navnet *storefront-api-ts-prisma*.
 ```bash
-git clone https://github.com/dit-brugernavn/api-template.git
-cd api-template
+git clone https://github.com/Webudvikler-TechCollege/storefront-api-ts-prisma.git
+```
+### 2. Skift til ny mappe og installér *dependencies* 
+Du kan bruge kommmandoen `cd` (change directory) til at at placere dig i den nye mappe. Derefter skal du køre en *npm install* for at installere de nødvendige pakker (*dependencies*) 
+```bash
+cd storefront-api-ts-prisma
 npm install
 ```
-### 2. Opret .env-fil ud fra det vedlagte eksempel
-
+### 3. Opret .env fil ud fra det vedlagte eksempel
+Kopier eller omdøb filen *.env-example* til *.env* med kommandoen *cp* (copy). Denne fil skal bruges til dine login oplysninger til databasen
 ```bash
 cp .env.example .env
 ```
-### 3. Indsæt dine database oplysninger
-I .env fil er der er en DATABASE variabel med en connection string, som er en url. Udskift de enkelte elementer i denne med dine egne oplysninger.
+### 4. Hent dine database oplysninger
+Hent dine database oplysninger fra https://selfservice.itcn.dk/. Slå knappen til On ud for MySQL database og klik på dit navn for at finde oplysningerne. Du skal bruge de oplysninger der står under *Mysql Database*. 
+
+### 5. Indsæt dine database oplysninger
+I .env filen er der er en variabel med en connection string (*DATABASE_URL*). Udskift de enkelte elementer i denne med dine egne oplysninger.
+
+- dbuser: Brugernavn
+- dbpassword: Password
+- dbhost: sql.itcn.dk
+- dbport: 3306
+- dbname: Database-navn 
 ```bash
 DATABASE_URL="mysql://[dbuser]:[dbpassword]@[dbhost]:[dbport]/[dbname]"
 ```
 *Husk også at fjerne klammerne ([]).*
 
-### 3.1 Initialiser database med fulde rettigheder
-Denne kommando kører med Prisma Migrate og kræver at du har fuld rettighed til din MySQL database. Dette kan typisk bruges hvis du kører med en lokal database.
-
-```bash
-npm run init
-```
-Denne kommando:
-- Kører `prisma migrate dev`
-- Seeder databasen via `prisma/seed.ts`
-
-### 3.2 Initialiser database med begrænsede rettigheder
-Hvis du kun har rettigheder til at administrere tabeller skal du bruge følgende kommando for at oprette tabeller og data.
-
-Denne model skal typisk bruges hvis du kører med en online database.
+### 6 Initialiser database
+Nu kan du køre følgende kommando for at oprette tabeller og data.
 ```bash
 npm run push
 ```
 Denne kommando pusher dine datamodeller til databasen og seeder tabellerne med data fra csv
 
-### 4. Start serveren
+### 7. Start serveren
 ```bash
 npm run dev
 ```
